@@ -69,10 +69,11 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="form-layout.html" class=' btn icon icon-left btn-warning'>
+                            <button type="button" class="btn btn-warning btn-block" data-bs-toggle="modal"
+                                data-bs-target="#backdrop">
                                 <i class="bi bi-stars"></i>
                                 <span>Upgrade ke Premium</span>
-                            </a>
+                            </button>
                         </li>
 
                     </ul>
@@ -87,26 +88,20 @@
             </header>
 
             <div class="page-heading">
+
                 <div class="page-title">
                     <div class="row">
-                        <div class="col-12 col-md-6 order-md-1 order-last">
+                        <div class="col-12 mb-4 text-center">
                             <h3>Pusat Bantuan</h3>
-                            <p class="text-subtitle text-muted">Ada kendala dalam aplikasi hubungi kamiuntukmendapatkan
+                            <p class="text-subtitle text-muted">Ada kendala dalam aplikasi hubungi kami untuk
+                                mendapatkan
                                 bantuan!</p>
-                        </div>
-                        <div class="col-12 col-md-6 order-md-2 order-first">
-                            <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Divider</li>
-                                </ol>
-                            </nav>
                         </div>
                     </div>
                 </div>
                 <section class="section">
                     <div class="row">
-                        <div class="col-6 mx-auto">
+                        <div class="col-5 ">
                             <div class="card text-center">
                                 <div class="card-header pb-0">
                                     <div class="avatar avatar-xl mb-2" style="display: inherit;">
@@ -138,13 +133,118 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-7">
+                            <div class="accordion" id="accordionExample" style="background-color:#fff ;">
+                                <div class="accordion-item border">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Apakah shortlink menu restoran ini gratis?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-dark">
+                                            ya, aplikasi shortlink menu restoran ini gratis selamanya, tetapi kalo kamu
+                                            ingin fitur menarik lain nya, silahkan upgrade ke premium.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Apakah shortlink menu ini dapat digunakan lebih dari satu restoran?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-dark">
+                                            ya, tetapi kamu harus menghubungi customer service kami terlebih dahulu!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Apakah ada limit jumlah link menu?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-dark">
+                                            Tidak ada limit untuk jumlah menu, silahkan tambahkan menu makanan sesuai
+                                            yang kamu butuhkan!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Bagaimana cara upgrade ke premium?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-dark">
+                                            Dapatkan fitur yang berguna buat restoran kamu dengan upgrade ke premium,
+                                            kamu tinggal chat ke customer service kami untuk mendapatkan fitur premium!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="backdrop" tabindex="-1" role="dialog"
+                            aria-labelledby="myModalLabel4" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+
+                                    <div class="modal-header py-0  border-0">
+                                        <h6></h6>
+                                        <button type="button" class="close " data-bs-dismiss="modal" aria-label="Close">
+                                            <i class='bi bi-x-lg' style='font-size:18px;'></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body px-5  pt-2 pt-4">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="assets/images/bg/upgrade.png" alt="" class="img-fluid"
+                                                    srcset="">
+                                            </div>
+                                            <div class="col-6">
+                                                <h3>Waktunya kamu upgrade ke premium!</h3>
+                                                <p class="text-dark">Nikmati fitu yang bisa diskustomisasi sesui
+                                                    kebutuhan kamu</>
+                                                    <ol class="text-dark">
+                                                        <li>Akses Online</li>
+                                                        <li>aplikasi untuk pelayan dan koki</li>
+                                                        <li>Customisasi aplikasis esuikebutuhan kamu!</li>
+                                                    </ol>
+                                                    <a class="btn btn-primary btn-block text-white"
+                                                        href="https://wa.me/6285315131514?text=Hallo,%20saya%20mau%20konsultasi%20aplikasi%20dengan%20sadigit,%20mohon%20bantuannya"
+                                                        role="button">Konsultasi <i class="bi bi-whatsapp"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
-
                 <footer>
                     <div class="footer clearfix fixed-bottom mb-0 text-muted text-center">
 
-                        <p>2021 &copy; Mazer</p>
+                        <p>&copy;2022 Sadigit</p>
 
                     </div>
                 </footer>
